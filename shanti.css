@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(10, 10, 10);
+    background-color: #f5f5f5;
+    line-height: 1.6;
+
+}
+
+/* Estilo para el encabezado */
+header {
+    background: rgb(224, 96, 203);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #d3b6cd;
+    border-bottom: 1px solid #c19dd3;
+    height: 50px;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Estilo para el logo */
+.logo img {
+    /*  width: 50%;*/
+    height: 40px;
+}
+
+/* Estilo para el menú de navegación */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+#menu li {
+    margin-right: 20px;
+    
+
+}
+#menu ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    top: 100%; /* Aparece debajo del elemento padre */
+    left: 0;
+    min-width: 200px; /* Ancho mínimo para el submenú */
+    z-index: 10;
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(119, 7, 247);
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+    
+
+#menu a.highlight {
+    color: rgb(118, 4, 146);
+}
+
+
+/* Estilo para la sección principal */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(204, 34, 153);
+    width: 30%;
+    height: 500px;
+    text-align: center;
+    
+}
+.bienvenida {
+    text-align: center; /* Centrar el contenido */
+    margin-top: 0px; /* Espacio en la parte superior */
+    padding: 20px;
+    background-color: #e9dfe6; /* Color de fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.bienvenida h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: rgb(119, 7, 247); /* Color del título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.bienvenida p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    color: #333; /* Color del texto */
+    margin-bottom: 30px; /* Espacio entre el párrafo y la imagen */
+}
+
+.bienvenida .img img {
+    width: 100%; /* La imagen ocupa el 100% del ancho disponible */
+    max-width: 400px; /* Límite del tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.destacado {
+   
+    font-weight: bold; /* Negrita */
+    text-align: left; /* Alineación del texto */
+    margin-bottom: 15px; /* Espacio inferior */
+    margin-top: -400px;
+    margin-left: 50px;
+}
+
+/* Estilo para el párrafo dentro de .caja */
+.caja {
+    width: 300px; /* Ancho del contenido */
+    height: auto; /* Altura automática para ajustar al contenido */
+    margin: 20px; /* Margen exterior */
+    padding: 20px; /* Relleno interior */
+    border: 15px solid  rgb(187, 138, 197); /* Borde de la caja */
+    background-color: #e2abf0; /* Color de fondo del contenido */
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto total */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    line-height: 1.5; /* Espacio entre líneas del texto */
+}
+
+.pie {
+    border-top: 2px solid  rgb(187, 138, 197) ; /* Línea separadora */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 0; /* Relleno arriba y abajo */
+    margin-top: 100px; /* Espacio superior entre el contenido y el footer */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+.pie p {
+    margin: 5px 0; /* Espacio entre los párrafos */
+}
+h2 {
+    color: rgb(119, 7, 247);
+    font-size: 25px;
+    font-style: italic;
+}
+p {
+    font-size: 16px;
+    line-height: 2.0;
+}
+
+button {
+    background-color: #4c055e;
+    color: rgb(227, 197, 235);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+button:hover {
+    background-color: #9808a5;
+}
+input[type="submit"], input[type="reset"] {
+    background-color: #850bcc;
+    color: rgb(15, 1, 1);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #004c99;
+}
+form div {
+    margin-bottom: 15px;
+}
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
