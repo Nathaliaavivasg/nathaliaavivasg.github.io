@@ -1,48 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenidos 🖐️</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\Naty\OneDrive\Desktop\Aprendiendo html\klipartz.com.png" type="image/png">
+    <link rel="stylesheet" href="shanti.css">
+    <title> SHANTI </title>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">SHANTI</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Naty\OneDrive\Desktop\Aprendiendo html\Mandala-Vector-Transparent.png">
+    
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">¿Quienes somos?</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Misión y visión</a></li>
+                        <li><a href="#">Profesores</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Trabajar en ti misma</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#" class="highlight">Comunidad</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bienvenida">
+        <h1> ¡Bienvenido! </h1>
+        <p> Una invitacion para encontrar la paz en el cuerpo, la mente y el espiritu.</p>
+        <div class="img">
+            <img src="C:\Users\Naty\OneDrive\Desktop\Aprendiendo html\CSS\1-removebg-preview.png">
+        </div>
+        
+        
+        <p class="destacado">¿Que significa SHANTI?</p>
+        <p class="caja">Shanti. Proviene de la raíz sánscrita sham, que significa “calma”. Y eso es lo que significa también shanti: “paz”, “tranquilidad”, “calma”, “descanso”.</p>
 
-<!-- Sección de bienvenida -->
-<div class="jumbotron text-center mt-5">
-    <h1 class="display-4">¡Bienvenido a SHANTI!</h1>
-    <p class="lead">Una invitacion para encontrar la paz en el cuerpo, la mente y el espiritu.</p>
-    <div class="img">
-        <img src="1.png" >
-    </div>
-    <hr class="my-4">
-    <p>Descubre más navegando por nuestras secciones.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Más información</a>
-</div>
-   <!-- Footer -->
-   <footer class="bg-light text-center py-4">
+
+            <p>Este sitio web ha creado con el propósito de ofrecer un espacio lleno de paz, buena energía y conexión! Aquí podrás compartir experiencias que inspiran, descubrir nuevas perspectivas y disfrutar de un ambiente donde las vibras positivas fluyen libremente. Queremos que este rincón se convierta en tu refugio para recargar el alma, explorar ideas, y formar parte de una comunidad donde la armonía y el bienestar son protagonistas. ¡Esperamos que te sientas como en casa! </p>
+        
+            <h2>Para sumarte a nuestra comunidad, solo debes completar tus datos:</h2>
+            <form action="/submit_formulario" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                </div>
+                <div>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div>
+                    <label for="birth">Seleccione fecha de cumpleaños:</label>
+                    <input type="date" id="birth" name="birth">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+51 987123654" required>
+                </div>
+                <div>
+                    <label for="opcion">Seleccione su país:</label>
+                    <select id="opcion" name="opcion" required>
+                        <option value="">--Selecciona país--</option>
+                        <option value="Peru">Perú</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Chile">Chile</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" id="Acepto" name="Acepto">
+                    <label for="Acepto">Acepto los términos y condiciones</label>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SkJBYIpjZz4?si=7buGOqOJSlpCTb-n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+    
+
+
+<footer class="pie">
     <p>&copy; 2024 Mi Sitio Web. </p>
+   <p>&copy;Nathalia Vivas</p> 
+   <p>&copy;Lima-Peru</p> 
+   
 </footer>
-</body>
-</html>
