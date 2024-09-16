@@ -192,3 +192,64 @@ form div {
     display: block;
     margin-bottom: 5px;
 }
+.tienda{
+    text-align: center; /* Centrar el contenido */
+    margin-top: 0px; /* Espacio en la parte superior */
+    padding: 20px;
+    background-color: #e9dfe6; /* Color de fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+.tienda h1{
+font-size: 2.5em; /* Tamaño del título */
+color: rgb(119, 7, 247); /* Color del título */
+margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+.tienda p {
+font-size: 1.2em; /* Tamaño del texto del párrafo */
+color: #333; /* Color del texto */
+margin-bottom: 30px; /* Espacio entre el párrafo y la imagen */
+}
+
+.tienda .img img {
+width: 100%; /* La imagen ocupa el 100% del ancho disponible */
+max-width: 400px; /* Límite del tamaño máximo de la imagen */
+height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.preguntas {
+    text-align: center; /* Centrar el contenido */
+    margin-top: 0px; /* Espacio en la parte superior */
+    padding: 20px;
+    background-color: #e9dfe6; /* Color de fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+
+}
+#lista {
+    margin-right: 20px;
+    
+
+}
+.lista ul li{
+    display: none;
+    position: absolute;
+    background-color: rgb(41, 1, 73);
+    list-style-type: none;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    top: 100%; /* Aparece debajo del elemento padre */
+    left: 0;ss
+    min-width: 200px; /* Ancho mínimo para el submenú */
+    z-index: 10;
+}
+
+#lista a {
+    text-decoration: none;
+    color: rgb(119, 7, 247);
+    font-weight: bold;
+    font-size: 12px;
+    
+}
